@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block content%}
+<div class="container">
+
+    <div class="card text-white bg-info mb-3">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            login successfully... Welcome
+            <a href="reg">
+                <button type="button" class="btn btn-outline-warning ">Add image</button>
+            </a>
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div>
+    <div class="row row-cols-2 g-2 mt-5 pt-3">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/img1.jpg'%}" alt="a snow-capped mountain range" style="height: 250px;" />
+                <div class="card-body">
+                    <h2 class="card-title">Mountains</h2>
+                    <p class="card-text">This is a photo of snow-covered mountains. How majestic.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/img2.jpg'%}" alt="a snow-capped mountain range" style="height: 250px;" />
+                <div class="card-body">
+                    <h2 class="card-title">Mountains</h2>
+                    <p class="card-text">This is a photo of snow-covered mountains. How majestic.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/img3.jpg'%}" alt="a snow-capped mountain range" style="height: 250px;"/>
+                <div class="card-body">
+                    <h2 class="card-title">Mountains</h2>
+                    <p class="card-text">This is a photo of snow-covered mountains. How majestic.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/img4.jpg'%}" alt="a snow-capped mountain range" style="height: 250px;"/>
+                <div class="card-body">
+                    <h2 class="card-title">Mountains</h2>
+                    <p class="card-text">This is a photo of snow-covered mountains. How majestic.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

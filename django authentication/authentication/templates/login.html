@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6 mt-3">
+            <div class="card p-3 bg-warning">
+                <form action="login" method="post">
+                    {% csrf_token %}
+                    <div class="row">
+
+                        <div class="col-md-12 mt-3">
+                            <center>login</center>
+
+                        </div>
+
+                        <div class="col-md-12 mt-3">
+                            <label for="">username</label>
+                            <input type="text" name="username" class="form-control">
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <label for="">password</label>
+                            <input type="password" name="password" class="form-control">
+                        </div>
+
+                        <div class="col-md-12 mb-3 mt-3">
+
+                            <button type="submit" class="btn btn-primary w-100">login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+</div>
+{% endblock%}
